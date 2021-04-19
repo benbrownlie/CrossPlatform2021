@@ -13,6 +13,8 @@ public class PlayerMovementBehavior : MonoBehaviour
     //Reference to the player
     private GameObject _playerRef;
 
+    private Ray _rayCast;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,6 @@ public class PlayerMovementBehavior : MonoBehaviour
         {
             //Sets the _mousePos variable to be the mouse position
             _mousePos = Input.mousePosition;
-
 
         }
     }
