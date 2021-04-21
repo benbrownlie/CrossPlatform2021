@@ -13,6 +13,8 @@ public class EnemyMovementBehavior : MonoBehaviour
     private NavMeshAgent _agent;
     //
     public Rigidbody rigidbody;
+    //
+    public float StartCos;
 
     // Start is called before the first frame update
     void Start()
