@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyMovementBehavior : MonoBehaviour
 {
@@ -8,12 +9,16 @@ public class EnemyMovementBehavior : MonoBehaviour
     public GameObject target;
     //Variable used to store and adjust the enemy's speed
     public float speed;
-
+    //
+    private NavMeshAgent _agent;
+    //
+    public Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _agent = GetComponent<NavMeshAgent>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -22,9 +27,6 @@ public class EnemyMovementBehavior : MonoBehaviour
         //Sets the enemy's lookat function to be the passed in target
         transform.LookAt(target.transform);
 
-        Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        direction = (target.transform.position + target.transform.position - transform.position).normalized;
-        Vector3 desiredVelocity = direction * speed;
-
+        _agent.SetDestination(target.transform.position);
     }
 }
