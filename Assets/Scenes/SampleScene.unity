@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b729de1a210a4b8dc1b96f1761ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBetweenSpawns: 1
+  TimeBetweenSpawns: 10
   StopSpawning: 0
   Enemy: {fileID: 6659003497657210840, guid: a473c76dacaf56544828f3d6fec4d33c, type: 3}
   XMax: 3
