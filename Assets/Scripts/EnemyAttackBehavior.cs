@@ -18,7 +18,7 @@ public class EnemyAttackBehavior : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //If the collided object isn't the target, return
-        if (collision.gameObject != _movement.Target)
+        if (collision.gameObject != _movement.target)
             return;
 
         HealthBehavior health = collision.gameObject.GetComponent<HealthBehavior>();
