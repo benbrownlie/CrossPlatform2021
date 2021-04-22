@@ -380,7 +380,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 160608697}
-  - component: {fileID: 160608696}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: EnemySpawn
@@ -388,25 +387,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &160608696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160608695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 051b729de1a210a4b8dc1b96f1761ba9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeBetweenSpawns: 1
-  StopSpawning: 0
-  Enemy: {fileID: 6659003497657210840, guid: a473c76dacaf56544828f3d6fec4d33c, type: 3}
-  XMax: 3
-  XMin: -3
-  ZMax: 3
-  ZMin: -3
 --- !u!4 &160608697
 Transform:
   m_ObjectHideFlags: 0
@@ -3564,7 +3544,7 @@ PrefabInstance:
     - target: {fileID: 4499574289517093898, guid: 37ed68969a10c4f48a9f4ef0ea3a940d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4499574289517093898, guid: 37ed68969a10c4f48a9f4ef0ea3a940d,
         type: 3}
@@ -3574,7 +3554,7 @@ PrefabInstance:
     - target: {fileID: 4499574289517093898, guid: 37ed68969a10c4f48a9f4ef0ea3a940d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4499574289517093898, guid: 37ed68969a10c4f48a9f4ef0ea3a940d,
         type: 3}
