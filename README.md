@@ -11,3 +11,4 @@ Avoid the red pills, they will continue to spawn as the game goes on.
 
 Taking too much damage will cause the game to end.
  
+Follow this link to play the game: https://benbrownlie.github.io/CrossPlatform2021/Player/
